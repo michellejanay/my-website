@@ -1,0 +1,26 @@
+/* =================
+  WRITE YOUR CSS HERE.
+  Check the ⌄ for help with formatting and validating your code.
+  You must write some CSS to complete this challenge.
+   ===================
+*/
+html,
+body {
+  height: 100%;
+  text-align: center;
+  background-color: black;
+}
+h1, p{
+  color: white;
+}
+p{
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors { display:none }
