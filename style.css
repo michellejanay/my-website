@@ -9,6 +9,8 @@ body {
   height: 100%;
   text-align: center;
   background-color: black;
+/*  display: flex;
+  flexbox:  flex-wrap;*/
 }
 h1, p{
   color: white;
@@ -18,7 +20,18 @@ p{
   margin-left: 20px;
   margin-right: 20px;
 }
-
+.container {
+  display: flex;
+}
+#about-me{
+  max-width: 50%;
+}
+#song-of{
+  max-width: 50%;
+}
+.c-site-footer{
+  color:  white;
+}
 /* don't edit this */
 .jest-lite-report__status--pass {
   background: var(--color-pass);
