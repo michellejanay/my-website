@@ -32,6 +32,12 @@ p{
 .c-site-footer{
   color:  white;
 }
+button{
+  background-color: #f2bd06;
+}
+a{
+  text-decoration:  none;
+}
 /* don't edit this */
 .jest-lite-report__status--pass {
   background: var(--color-pass);
