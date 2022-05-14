@@ -38,6 +38,9 @@ button{
 a{
   text-decoration:  none;
 }
+ul{
+  color: white;
+}
 /* don't edit this */
 .jest-lite-report__status--pass {
   background: var(--color-pass);
