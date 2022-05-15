@@ -4,18 +4,38 @@
   You must write some CSS to complete this challenge.
    ===================
 */
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
-  text-align: center;
   background-color: black;
-/*  display: flex;
+  margin: 0px;
+  text-align: center;
+  /*  display: flex;
   flexbox:  flex-wrap;*/
 }
-h1, p{
+#ul-nav {
+  background-color: #ebcd23;
+  margin: 0;
+  overflow: hidden;
+}
+.nav-link {
+  text-decoration: none;
+  display: inline;
+  font-size: 28px;
+  padding: 0px 20px;
   color: white;
 }
-p{
+.nav-link::active {
+  color: white;
+}
+h1,
+p {
+  color: white;
+}
+p {
   padding: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -23,26 +43,28 @@ p{
 .container {
   display: flex;
 }
-#about-me{
+#about-me {
   max-width: 50%;
 }
-#song-of{
+#song-of {
   max-width: 50%;
 }
-.c-site-footer{
-  color:  white;
+.c-site-footer {
+  color: white;
 }
-button{
+button {
   background-color: #f2bd06;
 }
-a{
-  text-decoration:  none;
+a {
+  text-decoration: none;
 }
-ul{
+ul {
   color: white;
 }
 /* don't edit this */
 .jest-lite-report__status--pass {
   background: var(--color-pass);
 }
-.jest-lite-report__errors { display:none }
+.jest-lite-report__errors {
+  display: none;
+}
