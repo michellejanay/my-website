@@ -21,14 +21,17 @@ body {
   margin: 0;
   overflow: hidden;
 }
-.nav-link {
+li.nav-link {
   text-decoration: none;
   display: inline;
-  font-size: 28px;
+  /* font-size: 28px; */
   padding: 0px 20px;
   color: white;
 }
-.nav-link::active {
+.nav-link:active {
+  color: white;
+}
+.nav-link:visited {
   color: white;
 }
 h1,
