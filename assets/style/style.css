@@ -1,9 +1,9 @@
-/* =================
+/*  =================
   WRITE YOUR CSS HERE.
   Check the ⌄ for help with formatting and validating your code.
   You must write some CSS to complete this challenge.
    ===================
-*/
+
 * {
   box-sizing: border-box;
 }
@@ -14,7 +14,7 @@ body {
   margin: 0px;
   text-align: center;
   /*  display: flex;
-  flexbox:  flex-wrap;*/
+  flexbox:  flex-wrap;
 }
 #ul-nav {
   background-color: #ebcd23;
@@ -24,7 +24,6 @@ body {
 li.nav-link {
   text-decoration: none;
   display: inline;
-  /* font-size: 28px; */
   padding: 0px 20px;
   color: white;
 }
@@ -64,10 +63,49 @@ a {
 ul {
   color: white;
 }
-/* don't edit this */
+/* don't edit this 
 .jest-lite-report__status--pass {
   background: var(--color-pass);
 }
 .jest-lite-report__errors {
+  display: none;
+} 
+*/
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+.nav-container {
+  background-color: #f6d212;
+  padding: 5px;
+}
+.nav-img {
+  height: 20px;
+}
+.right-nav {
+  float: right;
+}
+li {
+  list-style-type: none;
+  display: inline;
+}
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#image {
+  max-width: 80%;
+}
+.about-section {
+}
+.c-site-footer {
+  text-align: center;
+  margin-top: auto;
+  background-color: #f6d212;
+  padding: 5px;
+}
+.display-none {
   display: none;
 }
