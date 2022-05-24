@@ -29,20 +29,54 @@ document.getElementById('previous').addEventListener('click', (event) => {
 
 });
 
-$(document).ready(function () {
-    $("#ab-btn").on("click", function () {
-        $(".landing-page").addClass("display-none");
-        $(".contact-page").addClass("display-none");
-        $(".about-section").removeClass("display-none");
-    });
-    $("#contact-btn").on("click", function () {
-        $(".landing-page").addClass("display-none");
-        $(".about-section").addClass("display-none");
-        $(".contact-page").removeClass("display-none");
-    });
-    $("#home-btn").on("click", function () {
-        $(".about-section").addClass("display-none");
-        $(".contact-page").addClass("d-none");
-        $(".landing-page").removeClass("display-none");
-    });
+const homeBtn = document.querySelector('#home-btn');
+const aboutBtn = document.querySelector('#ab-btn');
+const contactBtn = document.querySelector('#contact-btn');
+
+const homePage = document.querySelector('.landing-page');
+const aboutPage = document.querySelector('.about-section');
+const contactPage = document.querySelector('.contact-page');
+
+function hidePages() {
+    aboutPage.classList.add('display-none');
+    contactPage.classList.add('display-none');
+}
+
+hidePages();
+
+homeBtn.addEventListener('click', function () {
+    aboutPage.classList.add('display-none');
+    contactPage.classList.add('display-none');
+    homePage.classList.remove('display-none');
+
 });
+
+aboutBtn.addEventListener('click', function () {
+    homePage.classList.add('display-none');
+    contactPage.classList.add('display-none');
+    aboutPage.classList.remove('display-none');
+});
+
+contactBtn.addEventListener('click', function () {
+    aboutPage.classList.add('display-none');
+    homePage.classList.add('display-none');
+    contactPage.classList.remove('display-none');
+})
+
+// $(document).ready(function () {
+//     $("#ab-btn").on("click", function () {
+//         $(".landing-page").addClass("display-none");
+//         $(".contact-page").addClass("display-none");
+//         $(".about-section").removeClass("display-none");
+//     });
+//     $("#contact-btn").on("click", function () {
+//         $(".landing-page").addClass("display-none");
+//         $(".about-section").addClass("display-none");
+//         $(".contact-page").removeClass("display-none");
+//     });
+//     $("#home-btn").on("click", function () {
+//         $(".about-section").addClass("display-none");
+//         $(".contact-page").addClass("d-none");
+//         $(".landing-page").removeClass("display-none");
+//     });
+// });
