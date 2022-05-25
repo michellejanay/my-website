@@ -80,3 +80,28 @@ contactBtn.addEventListener('click', function () {
 //         $(".landing-page").removeClass("display-none");
 //     });
 // });
+
+var message;
+
+function getNumberOrString(value) {
+    // Convert a string value to a number if possible
+    let number_value = Number(value);
+    if (Number.isNaN(number_value)) {
+        return value
+    } else {
+        return number_value
+    }
+}
+
+document.getElementById('post-message').addEventListener('click', (event) => {
+    message = [];
+    message.push(getNumberOrString(document.getElementById('inputz').value));
+    let element_message_board = document.getElementById('message-board');
+    message.forEach((message) => {
+        let new_li = document.createElement('li');
+        new_li.innerText = message;
+
+        element_message_board.appendChild(new_li);
+    });
+
+});

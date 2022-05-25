@@ -2,23 +2,25 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <title>Michelle Janay Codes</title>
 </head>
 
 <body>
+  <!-- NAVIGATION -->
   <header class="c-site-header">
     <nav class="">
       <div class="nav-container">
         <ul class="nav-ul">
-          <li><a href="index.html" class="nav-item" id="home-btn">MJ</a></li>
+          <li class="nav-item"><a href="index.html" id="home-btn" class="nav-link">MJ</a></li>
           <div class="right-nav">
             <li class="nav-item"><a href="#" class="nav-link" id="ab-btn">About</a></li>
             <li class="nav-item"><a href="#" class="nav-link" id="contact-btn">Contact</a></li>
-            <li class="nav-item"><a href="https://github.com/michellejanaycodes" class="nav-link" target="_blank"><img
-                  src="assets/images/github.png" alt="GitHub" class="nav-img"></a></li>
-            <li class="nav-item"><a href="" class="nav-link" target="_blank"><img src="assets/images/linkedin.png"
-                  alt="Linkedin" class="nav-img">
+            <li class="nav-item"><a href="https://github.com/michellejanaycodes" class="nav-link" target="_blank"><i
+                  class="bi bi-github"></i></a></li>
+            <li class="nav-item"><a href=https://www.linkedin.com/in/michelle-janay-22a1a323a/" class="nav-link"
+                target="_blank"><i class="bi bi-linkedin"></i>
               </a></li>
           </div>
         </ul>
@@ -27,49 +29,52 @@
       </div>
     </nav>
   </header>
-
+  <!-- LANDING PAGE -->
   <main class="landing-page">
-    <button id="previous">
+    <button class="arrow" id="previous">
       <code><</code>
     </button><img id="image" src="assets/images/1.png" alt="sunflowers">
-    <button id="next"><code>></code></button>
+    <button class="arrow" id="next"><code>></code></button>
   </main>
-
+  <!-- ABOUT PAGE -->
   <section class="about-section">
-    <div class="container">
-      <p id="about-me">Hi! My name is Michelle and I have been learning to code (on and off) since the end of 2020! This
-        is my second
-        time rebuilding this exact website because somehow the first one was lost D: I am hoping to make a career out of
-        coding and I am hoping that CodeYourFuture could be the next step for me to take in doing so! I look forward to
-        what the future holds and I am excited to learn new skills, refresh the old ones, and hopefully get back into
-        the
-        working world within the tech industry!</p>
-
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/NBjMTpggdOo" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen id="song-of"></iframe>
+    <hr>
+    <div class="about-container">
+      <img src="assets/images/hagd.jpg" alt="Michelle" id="meee">
+      <p id="about-me">Hi! My name is Michelle and thank you for checking out my web page! I am currently a Trainee Full
+        Stack Web Developer through CodeYourFuture. I have a passion for working behind the
+        scenes to create
+        interactive, responsive, user friendly web pages that capture people's attention.</p>
     </div>
+    <hr>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NBjMTpggdOo" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen id="song-of"></iframe>
+    <!-- CONTACT PAGE -->
   </section>
   <section class="contact-page">
     <h1>HELLO WORLD</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam atque placeat necessitatibus excepturi
       laudantium illo sapiente non ut a illum omnis ab, quos eligendi, quae voluptates voluptas explicabo mollitia!
       Quasi!</p>
-  </section>
 
+    <ul id="message-board">
+    </ul>
+    <input type="text" placeholder="Write a message!" id="inputz">
+    <button id="post-message">Post</button>
+
+  </section>
+  <!-- FOOTER -->
   <footer class="c-site-footer">michelleJanayCodes()</button></footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
+
   <script src="assets/script/script.js"></script>
 
 </body>

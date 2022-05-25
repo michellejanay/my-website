@@ -76,20 +76,30 @@ body {
   margin: 0;
   height: 100vh;
 }
+/* NAVIGATION */
 .nav-container {
   background-color: #f6d212;
   padding: 5px;
 }
-.nav-img {
-  height: 20px;
-}
-.right-nav {
-  float: right;
-}
-li {
+.nav-item {
   list-style-type: none;
   display: inline;
 }
+.right-nav {
+  float: right;
+  margin-right: 30px;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 22px;
+  padding: 0px 10px;
+  margin: 0px 10px;
+  color: white;
+}
+.nav-img {
+  height: 22px;
+}
+/* LANDING PAGE */
 .landing-page {
   display: flex;
   align-items: center;
@@ -98,13 +108,44 @@ li {
 #image {
   max-width: 80%;
 }
-.about-section {
+.arrow {
+  background: none;
+  border: none;
+  font-size: 30px;
 }
+.arrow:hover {
+  border: #f6d212 dotted 2px;
+}
+/* ABOUT SECTION */
+.about-section {
+  padding: 0 60px;
+  height: 100vh;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+#meee {
+  max-width: 20%;
+  padding: 20px;
+}
+#about-me {
+  max-width: 50%;
+  padding: 0 40px;
+  align-self: center;
+  text-align: center;
+}
+/* CONTACT PAGE */
+.contact-page {
+  height: 100vh;
+}
+/* FOOTER */
 .c-site-footer {
   text-align: center;
   margin-top: auto;
   background-color: #f6d212;
   padding: 5px;
+  color: white;
 }
 .display-none {
   display: none;
