@@ -1,76 +1,3 @@
-/*  =================
-  WRITE YOUR CSS HERE.
-  Check the ⌄ for help with formatting and validating your code.
-  You must write some CSS to complete this challenge.
-   ===================
-
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
-  background-color: black;
-  margin: 0px;
-  text-align: center;
-  /*  display: flex;
-  flexbox:  flex-wrap;
-}
-#ul-nav {
-  background-color: #ebcd23;
-  margin: 0;
-  overflow: hidden;
-}
-li.nav-link {
-  text-decoration: none;
-  display: inline;
-  padding: 0px 20px;
-  color: white;
-}
-.nav-link:active {
-  color: white;
-}
-.nav-link:visited {
-  color: white;
-}
-h1,
-p {
-  color: white;
-}
-p {
-  padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.container {
-  display: flex;
-}
-#about-me {
-  max-width: 50%;
-}
-#song-of {
-  max-width: 50%;
-}
-.c-site-footer {
-  color: white;
-}
-button {
-  background-color: #f2bd06;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  color: white;
-}
-/* don't edit this 
-.jest-lite-report__status--pass {
-  background: var(--color-pass);
-}
-.jest-lite-report__errors {
-  display: none;
-} 
-*/
 * {
   box-sizing: border-box;
 }
@@ -78,6 +5,7 @@ body {
   margin: 0;
   height: 100vh;
 }
+
 /* NAVIGATION */
 .nav-container {
   background-color: #f6d212;
@@ -102,6 +30,7 @@ body {
 .nav-img {
   height: 22px;
 }
+
 /* LANDING PAGE */
 .landing-page {
   display: flex;
@@ -119,6 +48,7 @@ body {
 .arrow:hover {
   border: #f6d212 dotted 2px;
 }
+
 /* ABOUT SECTION */
 .about-section {
   padding: 0 60px;
@@ -152,8 +82,15 @@ hr {
   text-align: center;
   padding-bottom: 60px;
 }
+.skillz-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .skillz {
-  width: 100vw;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 150px;
 }
 .skills-h {
   font-family: "Bungee Hairline", cursive;
@@ -161,15 +98,12 @@ hr {
 .skills-li {
   list-style-type: none;
   font-family: "Roboto Mono", monospace;
-  padding: 20px 0px;
 }
 .skill-icon {
   width: 100px;
 }
+
 /* CONTACT PAGE */
-/* .contact-page {
-  margin: auto;
-} */
 .contact-center {
   display: flex;
   justify-content: center;
@@ -180,6 +114,9 @@ hr {
   font-size: 50px;
   margin: 0px;
   padding-top: 10px;
+}
+.contact-p-container {
+  padding-bottom: 15px;
 }
 .contact-p {
   font-family: "Roboto Mono", monospace;
@@ -195,7 +132,7 @@ hr {
   text-align: center;
 }
 .message-board-style {
-  border: brown dotted 20px;
+  border: #784430 dotted 15px;
   padding: 40px 100px;
   font-family: "Roboto Flex", sans-serif;
   font-size: 25px;
@@ -205,11 +142,15 @@ hr {
   padding: 5px 20px;
   font-family: "Shadows Into Light", cursive;
   font-size: 30px;
-  background-color: lightseagreen;
+  background-color: #1d9371;
   border-radius: 5%;
   color: white;
   border: seagreen;
 }
+#post-message:hover {
+  border: #f6d212 dotted 2px;
+}
+
 /* FOOTER */
 .c-site-footer {
   position: fixed;
@@ -220,6 +161,7 @@ hr {
   background-color: #f6d212;
   padding: 5px;
   color: white;
+  font-family: "Roboto Mono", monospace;
 }
 .display-none {
   display: none;
