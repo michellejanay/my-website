@@ -1,17 +1,3 @@
-// let element_list = document.getElementById('list');
-// let new_li = document.createElement('li');
-// new_li.innerText = 'Banana';
-
-// element_list.appendChild(new_li);
-// let new_li2 = document.createElement('li');
-// new_li2.innerText = 'Kiwi';
-
-// element_list.appendChild(new_li2);
-// let new_li3 = document.createElement('li');
-// new_li3.innerText = 'Watermelon';
-
-// element_list.appendChild(new_li3);
-
 var asters = ['assets/images/2.png', 'assets/images/3.png', 'assets/images/4.png', 'assets/images/1.png'];
 
 
@@ -100,8 +86,10 @@ document.getElementById('post-message').addEventListener('click', (event) => {
     message.forEach((message) => {
         let new_li = document.createElement('li');
         new_li.innerText = message;
-
         element_message_board.appendChild(new_li);
+        new_li.style.textAlign = "center";
+        element_message_board.classList.add('message-board-style');
+        let iField = document.getElementById('inputz');
+        iField.value = '';
     });
-
 });
