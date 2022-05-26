@@ -1,4 +1,4 @@
-var asters = ['assets/images/2.png', 'assets/images/3.png', 'assets/images/4.png', 'assets/images/1.png'];
+var asters = ['assets/images/1.png', 'assets/images/2.png', 'assets/images/3.png', 'assets/images/4.png'];
 
 
 document.getElementById('next').addEventListener('click', (event) => {
@@ -26,7 +26,7 @@ const contactPage = document.querySelector('.contact-page');
 function hidePages() {
     aboutPage.classList.add('display-none');
     contactPage.classList.add('display-none');
-}
+};
 
 hidePages();
 
@@ -47,25 +47,7 @@ contactBtn.addEventListener('click', function () {
     aboutPage.classList.add('display-none');
     homePage.classList.add('display-none');
     contactPage.classList.remove('display-none');
-})
-
-// $(document).ready(function () {
-//     $("#ab-btn").on("click", function () {
-//         $(".landing-page").addClass("display-none");
-//         $(".contact-page").addClass("display-none");
-//         $(".about-section").removeClass("display-none");
-//     });
-//     $("#contact-btn").on("click", function () {
-//         $(".landing-page").addClass("display-none");
-//         $(".about-section").addClass("display-none");
-//         $(".contact-page").removeClass("display-none");
-//     });
-//     $("#home-btn").on("click", function () {
-//         $(".about-section").addClass("display-none");
-//         $(".contact-page").addClass("d-none");
-//         $(".landing-page").removeClass("display-none");
-//     });
-// });
+});
 
 var message;
 
