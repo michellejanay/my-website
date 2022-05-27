@@ -1,4 +1,4 @@
-var asters = ['assets/images/test/1.png', 'assets/images/test/2.png', 'assets/images/test/3.png', 'assets/images/test/4.png'];
+var asters = ['assets/images/1.png', 'assets/images/2.png', 'assets/images/3.png', 'assets/images/4.png'];
 
 
 document.getElementById('next').addEventListener('click', (event) => {
