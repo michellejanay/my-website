@@ -1,4 +1,4 @@
-# cyfFundamentals
+# my-website
 
 check out the deployed page here
 
